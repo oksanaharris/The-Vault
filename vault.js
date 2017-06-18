@@ -5,7 +5,7 @@ function VaultGenerator() {
   // console.log("vault: " + vault);
 
   function getValue(key){
-    if (vault[key]){
+    if (key in vault){
       return vault[key];
     } else {
       return null;
